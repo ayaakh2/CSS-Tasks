@@ -1,0 +1,159 @@
+.container1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+
+}
+.banner{
+    
+    font-size: 60px;
+    background-color:darkred;
+    justify-content: center;
+    flex-grow: 1;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding-top: 150px;
+
+}
+.page{
+    background-color: peru;
+    flex-grow: 1;
+
+}
+p{
+    color: darkred;
+    font-size: 1.5rem;
+}
+.paragraph--footer{
+color: black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    position:relative ;
+    left:500px;
+    color:darkgreen;
+    /* justify-content: space-between; */
+    gap: 40px;
+    font-size: 30px;
+}
+.container2{
+        background-color: rgb(113, 182, 222);
+
+    height:100vh
+}
+.card{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    left: 560px;
+    top:120px;
+    width: 350px;
+    height:450px;
+    box-shadow: 10px 10px 5px 5px (0 0 0 );
+    text-align:center ;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.card__title{
+    font-size: 33px;
+    position: relative;
+    top: 15px;
+    margin: 20px;
+}
+.card__text{
+    font-size: 16px;
+    margin: 20px;
+}
+.form__label{
+    font-size: 16px;
+    position: absolute;
+    left:40px;
+}
+.input{
+    border-color: rgb(113, 182, 222);   
+    border-radius: 10px;
+    width: 270px;
+    height:30px;
+    margin-bottom: 13px;
+    margin-top: 5px;
+}
+.btn{
+    background-color: rgb(113, 182, 222);
+    border-radius: 8px;
+    color: white;
+    width:100px;
+    height: 36px;
+    border-color: rgb(113, 182, 222);
+
+
+}
+
+.container3{
+    background-color: rgb(46, 206, 255);
+    border-radius: 20px;
+    position: relative; 
+    left: 430px;
+    top:120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    gap: 0.5rem;
+    
+    width: 500px;
+    height:430px;
+    text-align:center ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card__title2{
+    flex-grow: 2;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    /* position: relative; */
+    /* top: 30px;
+    margin: 20px; */
+}
+/* .input2{
+    flex-grow: 1;
+    border-color: rgb(113, 182, 222);   
+    border-radius: 6px;
+    width: 400px;
+    height:50px;
+    margin-bottom: 23px;
+
+} */
+.input2{
+    flex-grow: 1;
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border-color:rgb(46, 206, 255);
+    
+}
+.txt{
+    flex-grow: 2;
+    flex-shrink: 1;
+    width: 400px;
+    height: 100px;
+    border-radius: 5px;
+    border-color:rgb(46, 206, 255);
+}
+.btn2{
+    /* position:absolute; */
+    /* bottom: 3px;
+    left: 45px; */
+    background-color: rgb(43, 102, 136);
+    border-radius: 8px;
+    color: white;
+    width:60px;
+    height: 30px;
+    border-color: rgb(113, 182, 222);
+    margin-right: 350px;
+    margin-bottom: 10px;
+}
