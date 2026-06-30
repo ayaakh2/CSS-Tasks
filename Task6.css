@@ -12,8 +12,95 @@
     
 }
 .container2{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img8";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:10px;
+    width: 50%;
+    
+}
+
+.i1{
+    grid-area: img1;
+}
+.i2{
+    grid-area: img2;
+}
+.i3{
+    grid-area: img3;
+}
+.i4{
+    grid-area: img4;
+}
+.i5{
+    grid-area: img5;
+}
+.i6{
+    grid-area: img6;
+}
+.i7{
+    grid-area: img7;
+}
+.i8{
+    grid-area: img8;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    height:100vh;
+    color: white;
+    border: 15px solid gold;
+    /* width: 50%; */
+
+}
+.container3 div{
+    
+    width: 23.5%;
+    /* margin: 10px; */
+    padding: 10px;
+    text-align: center;  
+    font-size: 120px;
+
+}
+
+.container5{
     border: 15px solid gold;
 
+}
+.container4 {
+    display: grid;
+    grid-template-areas:
+    "top top "
+    "midl midr "
+    "bottom bottom";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:15px;
+    height: 100vh;
+}
+
+.top {
+    grid-area:top;
+    background: black;
+}
+.midl {
+    grid-area: midl;
+    background-color: darkorange;
+    height: 400px;
+}
+.midr {
+    grid-area: midr;
+    background: green;
+    height: 400px;
+
+}
+.bottom{
+    grid-area: bottom;
+    background-color: blue;
 }
 .first{
     flex-grow: 1;
