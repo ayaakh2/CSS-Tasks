@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Task2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Task2</title>
 </head>
 <body>
-    
+    <div class="container1">
+        <img class="logo" width="100px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAByCAMAAAAWEDTnAAAAjVBMVEX///8KZsIAY8EAXb87gMwAW7+oxOYAX8AAYcAAZMFdjdDp7/iivuNSiM74/P6lwORvmtUAWb6DqtzO2++yyehHgMtymtUlc8eYtd+Qst7Z5/XB1u4AVr3y9/whccbi7PfT4fJ4otgTa8QAUryyxeWGrd3E1+41eslhktKStN+BotdckdKgueG5z+pOi9CU8kn1AAAMp0lEQVR4nO2de2O6LBTHE3LAKpdWa7U0c+uy39be/8t7qjXlHPBSka4evn9mKPCR2+FwbLWsrKysrKxqVBx8t6+p72DadBHvUYORzzi5pjhze/Omi3l3GlLuXF+c2UZnVvGbqIGb45AkbLqo96U1qYWb49BF00W9K726NXFzhLBNzqAWdQxwP/JXTRf2nrSpDxx9aLqw96TH+sCxbtOFvSdZcDcqC+5GZcHdqLTgCOfc/LLcgjMpFZxg7vrfv+fxjBlmZwZcvGw7TnvyvzegKeC48/WzUO4E3Gw3moKLnx6ATsjufDRjRAjCZt/mlvMhzE+3Y+zOl+gVZOppiy5jcG7fS6+FI3YVcN03Kot7rarakjS7PIkvrpujOjA/bwNTN75IG1/OlD9ClxE4dwITmySXgQN3FUllcKuZlI5wU91lB5r93L8B7hmQIT10GYLjfXjVM2mCvhhcmIBRl68vrJpf3T44oWy9xAab3MXgXii8oY/7/TN1++Doh5L829wE5VJw3hhNczkuzJm6fXAzdaa2RW95g+DmPrqhENWnNUW6eXAiUpN3Zo4pXQpO3To0ND25eXDKxb3MmVDMg2Px+fUi6T7BJaa4XQxuqnSV3Izr2M2DE7r5tTnD16XgQoKyIpwL6kXSzYNzXDW5MiNoDpyyW88NuR/dAbhXJfnX35lVtgZ4HWfIyfb2wfFHJXlkbovgcpNXH5BD5rnzdfvgHIqb3Mtfspy0Wm2JHN1cUi2y7gCccOCWxooa3JMzAM7b+McMEd+cf+0dgHNIJK9pt3ge1zS4XZaiGWWMztoGa/cewDlEPP1e8gJzExNj4HbLue1Xd2v07M9dgHMEdZbbuBMP+9ToNqoxcOZ1H+D2TifU9V1q3F3IgjtJp4O7liy4k2TBlcqCK5YFd5IsuFJZcMWy4E5SHeAEZ4yVuq03BM6Lt8P34fZ1mvuYDlyvXgBuPti+v+8etjptnRkOfrIIUkFwin8NtpxQqAwF118QuxRu9Dl5mQSL72jv3ppLz4CReS1HT1kH2RV4IfV194b9aOYeMuz6s+R5qHV/LgUX4jAw67Zyo/nTYvzm/zxr/7D1clCpXPNuP0mz6K8naaqTwPHP+RRo/YuBTcCV+MfFUTDe+5LLOd32E5rji3k5uBEIx8IkJ1AqX6DHbYPpMnLl90hw11lo/MtLwfUYituC/9J5GeFXljA/WpT6xGwfYTrC3Cj4yeJp4JBDbGv0C4E9gd+9w3YPY4HaJ3jDtattdZeD64FXQs4s2KdnB3Bhn6m797s37UW5bRm4PjL9CRc6dM77RPuy7kaQTeE5hGGkiTEjGFnuLxoCR1VwhAY5By9etJsK9YLbEr3ThXB7+Hkl4JbYSckFddFZzHKHh10bX+aWZt7z9ekETQZXBMfW+SNwnGjewFrBBTmVsr+8Ru9bMbiuwg2weHAKTbq79yTn7X4V+fNCQh+u1lW6m6L67iRqvdUJDvduQBydfCkE94r7fQrqaKEfFuSnRdruslu41Sn84b/rgHPwP5FitfuoD9zXpDjsDg3AbYvAxbjDZd9y0n6F+D7c0XRNy/we4ZgKOo2Y6ipDfFxLker0UBs40itbnPqxfNsCcErPwddybgsbdpZmrJTwq9x5Dj74xGNW+eDKV5iKm1Ft4JzSs2Gws8wH50V4nxmcZ/pQ25vYrRYELrnihLU9ORCXqa6ygoY4c/WBKxeVu8NccN4IcROOvDIb4GFKMDcZ9UZjjrPjDkE5OgraUp3d4k4H18K5+0vggC9trq1ygxdwgLc3JuhqEsT7Bul1XhKYUjigjGpXLgijvj/L37+uscUp8d0aAScc/WpO7vLyWtwCj2DwJCU6ZynA6cIPONtksg/oVj0EwduT7TT0OoPhQrcorxfcCvWV9YPbvcZJlDBXUxNgBqIHp0wgKIj34aFxNYpBXh/AZcGzF8XDoz/hwBA3wA39UNgrgPNyVpghetnrBkf8dncehp3OaqPOveUmoAenHOlEiwjY4ATBqzW4cGdf6YUHdGM+jlHSV6JMr0wtB9Iydx9H42i9GeoujuDjawZH11l9xHh26PBPqRA6cMrMg6K6ge1GsxcEzqiQ7CQUCojANIfbOmp+jYLzAkr5bvYrOI00m1h9+PR6wcFIwl6E3+FEqiYNuDnmhmtuBRIxjV/1HDQ5Nz7+PIA9MDbjHLOEu1Oj4OZRVl9Ec9LnA1ZIreAYKskUg5hlT9WAC9GMcbfwRgNCIBdCCJ1ZCwQ+SKcuAXT6J/oV8QBNEEyCCx0QaoMped82B04kOG2ALDl+tiJTlwPeWll449KBcUCpt4OGcvnThRgc+XOGIGVObhJcG91aOT0zaA6cq8R/nqMFkvQPtcX1EGWhhAnogPqn2ogr4FCooJofNS9Y+gDUo5qbVT6gxiwoLlzc2Bini4CCpkpSXWNwMT40IajyHkzhAKafWINyHpv4O7g3Vbd1f4XImAOnRItieM9wCl/yGsFRzSwXWb2l0N4IHPnG9nFXvd0Q1v/qVSdgoT7mCXaBBYdq4RPMgYsV+zbB86MOaQgcPuZ30Ap13FmB0Bin2Kj9L/VuyGxCXY3gfOjYuEAZhLpvkGoOasncGIcDa+0HAlRdaAVe4+6ALnzEFFV1RqOjsVTI+dYdoVyefJTpaB4F83x1XiDVHoiAZa7Ffap2JLjL1SA47SQvRC0uG11wi4MSY11WAp1BsVD8sAPrge6TB7p7HwXnrcbAaQLX4JEFZrJGcEx7rD8fXEmL0/n7nA6OtA91Al5mpka9ywTjKhgDp4nxhYMue021OPquS42mSvng8M6KLrzi8mRwPy03rA6ufxVwng4cysYfA+dUBMe6yDoumDr3m5x+XDdR60TfNRwFbZ1XBYey0Rw4rTlC5IJDlpN4iGbM0NHkoI/i7lWj41q7+hh3na7ynsENlFjUTJn94b2Zch0nORDcc0FprzM5uStwiskLeyU4PrZwoF1iWi7/MDlpreVcaMPe/ebKucpy4L7BYaMP8jZR0rDtsFw/ZjO4jKL5X0+Ar4YFl+amqKvc5RENczjOeAgW0pqwg3mCK3edbe6o4Dq2yrsCp9sBx8McDpYPPLXc6jGG4V7Xz+JOK1h5dlaZ5qYEXIj3zJHLCZhWnvDZIBTkGlubUqHZj21xaW5KwLVivGcO9wjAZqPWOJoj9NWLHF9+VHd/E1zoFSq7Ya3glPNVaDcVDHL6ndSdtspbibbiqWbroaX46/xFcI4zLlIkjQL1glM+lkEimQKYZeTtzwzflONxyJtEKDFC91Li3/1JcKJIXDLO1wwuxMczmeTThwYr7d5P68EVPMITF7QDLTStVfGh/pvgCiWaA6cejnNlayyM7e1r7MWHY7EET/mflCPl6Ej2dK2aZSy4NDcVwLVeFL8ayfkEefzRPuoUV8f6F+gcuKec1qVJkDbLcNXXRQKw4NLcVAGnnKsBnuZ9WA6WSN+e9LajrP7pJxgBsZvVIRhE9B18PU36bUd75sOCy3JTbDk5KlRPpErlQ+7GgpLnh9fpfDVc9nzQbNBAh702D4k5p4zxvGDKFlyam0otTg0nLs9CFIcpwam7D9LKcGdHiDwDmZ8e6/oPWk5K1GyLa7UmeKLgSh0itmjmC54Dxxt+FdJbcL+5qdbiNMOcbKVSgtfkiEdw5vJR4fA+LKwF95ubquDwMT+4UbCcVen12Bg7egZlxPkalNaCS3NTFRz2pHVgEIUhK3UbEu6jalcpCcXCk7BGZ6FbBVcSaFQd5uSCztvFwYUETbSfqJe+aa5J8x1Cc6WdnKS5qQ4On0tyHB/YF194fnin3RJhkrPL3dn4+oAsu1Xdvqpsizvq3K5SE5cEeduHH4kuzMU+BkbULdi0GrTVZLsVBV8cUP9BcG8VfGt+5UonyNou8L6RXK9mIM1MCw7ed5ZltgPz86aeil752PNnjO1b/cjNls9iv5x2nVEQ6zIiKV78JBOHRIQzN+l1j7feyA/18b5dZXC4n67gENvKcUGfPj2cIMlEu4VXpP4K3vFJ60kAEz9ldRrC1F3NUR/05N2flEeE8ctzL6KznXwefS4f4sIgo1my7nM7Yf5sxpLev5c4eyFewQPxFgL6DNl6GchapkYd8g2v6HznSQ/9B3Gtvr9vVSoUTHvXxIGyJkPQFZVb2X8sOJNq4rsDVgZkwd2oLLgblQV3o7LgblQW3I1qUx84qrW1Wp0n7DF7ReW6yVudoa7ZT0YXiGjDTlidKRyb7HrSxS6wOl/VvnlwscQs/+tAVmdpXMcox6mdUppW+OgzTq4pTv3HuOli3qMGy8/2NbXonvbJUCsrK6v/uf4DFCU20RDQJE4AAAAASUVORK5CYII=">
+        <div class="signin">
+            <div class="card1">
+                <div class="card1__title">Sign in</div>
+                <div class="card1__text">Stay updated on your professional world</div>
+                <input type="text" class="input1" placeholder="Email or Phone">
+                <input type="password" class="input1" placeholder="Password">
+                <div class="link__action">Forget password?</div>
+                <button class="btn1">Sign in</button><br>
+                <button class="btnsec"><i class="fa-brands fa-apple" style="color:black"></i> Sign in with Apple</button>
+            </div>
+            <div class="text">New to Linkedin? <span class="link__action2">Join now</span></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container2">
+        <div class="header">
+            <div class="logo2">Scratch</div>
+            <div>
+                <span class="lnk--display">Signup</span><span class="lnk--active">Login</span>
+            </div>
+
+        </div>
+        <div class="card2">
+            <label class="label1">Email</label>
+            <input type="text" class="input2">
+            <label class="label1">Password</label>
+            <input type="password" class="input2">
+            <button class="btn2">Login</button>
+        </div>
+
+    </div>
+
+    <div class="container3">
+        <div class="card3">
+            <div class="card3__title">Login</div>
+            <input type="email" placeholder="Email" class="input3">
+            <input type="password" placeholder="Password" class="input3">
+            <div class="check3" ><input type="checkbox"><label>Show Password</label></div>
+            <button class="btn3">Sign in</button>
+            <div class="card3__text">Forgot <span class="link3--action">Username / Password</span>?</div>
+            <div class="card3__text">Don't have an account? <span class="link3--action">Sign up</span></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container3">
+        <div class="card4">
+            <div class="card4__title"> User Login</div>
+            <label class="label4">Username</label>
+            <input type="text" class="input4">
+            <label class="label4">Password</label>
+            <input type="password" class="input4">
+            <button class="btn4">Login</button>
+            <div class="card4__text">Forgot Password?</div>
+        </div>
+
+    </div>
 </body>
 </html>
