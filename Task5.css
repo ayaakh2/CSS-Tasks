@@ -1,0 +1,90 @@
+.container1{
+    background-color: darksalmon;
+    
+
+}
+.header1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.sec_container1{
+    display: grid;
+    grid-template-areas:
+    "p1 p2 p3"
+    "p4 p4 p4"
+    "p5 p6  none";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    gap:10px
+}
+p{
+}
+.p1{
+    grid-area: p1;
+    background-color: rgb(214, 214, 214);
+
+
+}
+.p2{
+    grid-area: p2;
+    background-color: rgb(214, 214, 214);
+
+
+}
+.p3{
+    grid-area: p3;
+    background-color: rgb(214, 214, 214);
+
+}
+.p4{
+    grid-area: p4;
+    overflow-y: scroll;
+    height: 120px;
+    background-color: rgb(214, 214, 214);
+    border: 3px solid black;
+}
+.p5{
+    grid-area: p5;
+    background-color: rgb(214, 214, 214);
+
+}
+.p6{
+    grid-area: p6;
+    background-color: rgb(214, 214, 214);
+
+}
+
+.container3{
+    width: 100%;
+    height: 200vh;
+    font-size: 2rem;
+}
+.img3{
+    position: sticky;
+    right: 10px;
+    float: right;
+    top:10px;
+}
+
+.orange{
+    background-color: rgb(255, 167, 136);
+}
+.yellow{
+    background-color: rgb(242, 242, 70);
+}
+.container2{
+    background-color: rgb(252, 252, 196);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:5px;
+}
+.container2 div{
+    border: 1px solid black;
+    background-color: white;
+    width:70%;
+    padding: 10px;
+    margin: 5px;
+}
